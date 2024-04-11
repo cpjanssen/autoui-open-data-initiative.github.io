@@ -40,6 +40,8 @@ Following the guidelines we shared for the [AutomotiveUI '24 conference](https:/
 
 Here, we provide a dynamically updated table of related works, categorized by criteria such as datasets, simulation software, models, and surveys, to facilitate easy access to a wealth of resources that can support your Open Science endeavors.
 
+### Datasets
+
 | Category    | Title              | Author   | Year | Link |
 |-------------|--------------------|----------|------|------|
 {% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
@@ -47,6 +49,7 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
 
+### Software
 
 | Category    | Title              | Author   | Year | Link |
 |-------------|--------------------|----------|------|------|
@@ -55,6 +58,7 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
 
+### Models
 
 | Category    | Title              | Author   | Year | Link |
 |-------------|--------------------|----------|------|------|
@@ -63,12 +67,24 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
 
+### Surveys
 
 | Category    | Title              | Author   | Year | Link |
 |-------------|--------------------|----------|------|------|
 {% assign surveys = site.data.related_works | where: "Category", "Survey" | sort: 'Year' %}
 {% for item in surveys %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
+{% endfor %}
+
+### Other
+
+| Category    | Title              | Author   | Year | Link |
+|-------------|--------------------|----------|------|------|
+{% assign excluded_categories = "Survey,Model,Software,Dataset" | split: "," %}
+{% for item in site.data.related_works %}
+  {% unless excluded_categories contains item.Category %}
+    | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
+  {% endunless %}
 {% endfor %}
 
 
