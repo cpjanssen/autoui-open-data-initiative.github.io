@@ -46,6 +46,9 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
 
+
+We encourage authors of papers with openly available materials to create a Pull request so that their work can be added.
+
 ## Conclusion
 
 Embracing Open Science is a journey that requires commitment, collaboration, and a willingness to share and learn from one another. We invite the automotive user research community to join us in this endeavor, working together to advance our field in a way that is open, inclusive, and transparent.
