@@ -51,7 +51,6 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 ### Software
 
 | Category    | Title              | Author   | Year | Link |
-|-------------|--------------------|----------|------|------|
 {% assign simulationsoftware = site.data.related_works | where: "Category", "Software" | sort: 'Year' %}
 {% for item in simulationsoftware %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
@@ -60,7 +59,6 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 ### Models
 
 | Category    | Title              | Author   | Year | Link |
-|-------------|--------------------|----------|------|------|
 {% assign models = site.data.related_works | where: "Category", "Model" | sort: 'Year' %}
 {% for item in models %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
@@ -69,7 +67,6 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 ### Surveys
 
 | Category    | Title              | Author   | Year | Link |
-|-------------|--------------------|----------|------|------|
 {% assign surveys = site.data.related_works | where: "Category", "Survey" | sort: 'Year' %}
 {% for item in surveys %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
@@ -78,7 +75,6 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 ### Other
 
 | Category    | Title              | Author   | Year | Link |
-|-------------|--------------------|----------|------|------|
 {% assign excluded_categories = "Survey,Model,Software,Dataset" | split: "," %}
 {% for item in site.data.related_works %}
   {% unless excluded_categories contains item.Category %}
