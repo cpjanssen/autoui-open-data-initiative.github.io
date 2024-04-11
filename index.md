@@ -42,12 +42,39 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 
 | Category    | Title              | Author   | Year | Link |
 |-------------|--------------------|----------|------|------|
-{% assign sorted_works = site.data.related_works | sort: 'Year' %}
-{% for item in sorted_works %}
+{% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
+{% for item in dataset %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
 
+
+| Category    | Title              | Author   | Year | Link |
+|-------------|--------------------|----------|------|------|
+{% assign simulationsoftware = site.data.related_works | where: "Category", "Software" | sort: 'Year' %}
+{% for item in simulationsoftware %}
+| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
+{% endfor %}
+
+
+| Category    | Title              | Author   | Year | Link |
+|-------------|--------------------|----------|------|------|
+{% assign models = site.data.related_works | where: "Category", "Model" | sort: 'Year' %}
+{% for item in models %}
+| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
+{% endfor %}
+
+
+| Category    | Title              | Author   | Year | Link |
+|-------------|--------------------|----------|------|------|
+{% assign surveys = site.data.related_works | where: "Category", "Survey" | sort: 'Year' %}
+{% for item in surveys %}
+| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
+{% endfor %}
+
+
+
 We encourage authors of papers with openly available materials to create a Pull request so that their work can be added.
+Category must be one of [Dataset, Software, Model, Survey].
 
 ## Conclusion
 
