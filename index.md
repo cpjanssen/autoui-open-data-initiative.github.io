@@ -1,123 +1,56 @@
 ---
 layout: default
+title: Open Science in Automotive User Research
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Open Science in Automotive User Research
 
-[Link to another page](./another-page.html).
+Open Science principles are critical in advancing transparency, collaboration, and accessibility in research. By embracing these values, we aim to create a more inclusive and dynamic research environment, particularly within the automotive user research community. This initiative reflects our commitment to driving forward the development of open, user-centered automotive technologies and services, ensuring that knowledge and findings are shared openly to benefit the broader community.
 
-There should be whitespace between paragraphs.
+## Why Open Science?
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+The pursuit of Open Science is essential for several reasons:
 
-# Header 1
+- **Accelerating Knowledge Dissemination:** Open Science practices ensure that research findings are shared more broadly and quickly, facilitating faster advancements in the field.
+- **Enhancing Collaboration:** By making research data and methodologies openly available, we foster an environment where researchers can easily collaborate, building upon each other's work to push the boundaries of knowledge.
+- **Promoting Transparency and Reproducibility:** Open access to research findings and data supports the verification of results, enhancing the credibility and reliability of research within our community.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+In light of these benefits, we have taken steps to integrate Open Science principles into our research practices, aiming to lead by example within the automotive user research community.
 
-## Header 2
+## Practical Tips for Embracing Open Science
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Following the guidelines we shared for the [AutomotiveUI '24 conference](https://www.auto-ui.org/24/authors/open-science/), here are practical tips to incorporate Open Science into your research workflow:
 
-### Header 3
+### Data Sharing and Management
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+- **Use Repositories:** Leverage platforms like Zenodo or the Open Science Framework (OSF) to share your datasets, ensuring they are accessible and citable.
+- **Adopt FAIR Principles:** Ensure your data is Findable, Accessible, Interoperable, and Reusable to maximize its value to the community.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+### Open Access Publications
 
-#### Header 4
+- **Choose Open Journals:** When publishing your findings, opt for journals that offer open access, making your research available to all.
+- **Preprints:** Consider posting preprints of your research to platforms like arXiv or bioRxiv to share your findings ahead of journal publication.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+### Transparency in Methodology
 
-##### Header 5
+- **Code Sharing:** Use platforms like GitHub to share the code used in your research, including analysis scripts and software developed as part of your work.
+- **Detailed Documentation:** Ensure that your methodologies are thoroughly documented and shared, allowing others to replicate or build upon your work.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+## Related Works and Resources
 
-###### Header 6
+Here, we provide a dynamically updated table of related works, categorized by criteria such as datasets, simulation software, models, and surveys, to facilitate easy access to a wealth of resources that can support your Open Science endeavors.
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| Category    | Title              | Author   | Year | Link |
+|-------------|--------------------|----------|------|------|
+{% for item in site.data.related_works %}
+| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
+{% endfor %}
 
-### There's a horizontal rule below this.
+## Conclusion
 
-* * *
+Embracing Open Science is a journey that requires commitment, collaboration, and a willingness to share and learn from one another. We invite the automotive user research community to join us in this endeavor, working together to advance our field in a way that is open, inclusive, and transparent.
 
-### Here is an unordered list:
+For more information, updates, and resources, keep an eye on this page and our upcoming publications and workshops dedicated to Open Science in automotive user research.
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+[Link to Paper and Workshop: To be updated once available to maintain anonymity during the review process.]
 
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
