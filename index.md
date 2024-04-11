@@ -42,10 +42,10 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 
 | Category    | Title              | Author   | Year | Link |
 |-------------|--------------------|----------|------|------|
-{% for item in site.data.related_works %}
+{% assign sorted_works = site.data.related_works | sort: 'Year' %}
+{% for item in sorted_works %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
-
 
 We encourage authors of papers with openly available materials to create a Pull request so that their work can be added.
 
