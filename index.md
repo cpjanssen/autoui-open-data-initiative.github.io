@@ -43,7 +43,6 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 ### Datasets
 
 | Category    | Title              | Author   | Year | Link |
-|-------------|--------------------|----------|------|------|
 {% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
 {% for item in dataset %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
