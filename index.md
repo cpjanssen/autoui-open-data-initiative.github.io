@@ -3,6 +3,18 @@ layout: default
 title: Open Science in Automotive User Research
 ---
 
+<style>
+table {
+    width: 100%;
+    table-layout: fixed;
+    overflow: auto;
+}
+th, td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+}
+</style>
+
 # Open Science in Automotive User Research
 
 Open Science principles are critical in advancing transparency, collaboration, and accessibility in research. By embracing these values, we aim to create a more inclusive and dynamic research environment, particularly within the automotive user research community. This initiative reflects our commitment to driving forward the development of open, user-centered automotive technologies and services, ensuring that knowledge and findings are shared openly to benefit the broader community.
@@ -26,10 +38,10 @@ Following the guidelines we shared for the [AutomotiveUI '24 conference](https:/
 There are many places where we can publish open access artifacts. It is good practice to keep your data on a FAIR platform/repository. Here are some examples (updated June 2024):
 
 1. **[ACM Digital Library](https://dl.acm.org)** (FAIR): AutoUI is an ACM conference, and the platform allows the sharing of (small) supplementary material with the publication.
-2. **OSF** (FAIR, [OSF](https://osf.io)): Allows to make repos anonymous for review, which can be handy for the submission process. It is a ‘swiss knife’ for publishing artifacts in open access, and the platform allows a great level of flexibility. File versioning is straightforward, and OSF also allows you to pre-register your study. It is also easy to make your material anonymous for the review process.
-3. **Zenodo** (FAIR, [Zenodo](https://zenodo.org)): Data is stored at CERN, which is reliable. It is becoming a common place to share data, which may make it user-friendly. They accept up to 50GB per dataset with an option to have multiple datasets.
-4. **GitHub** (**not** FAIR, [GitHub](https://github.com)) Everyone knows how to navigate around a repo on GitHub, which can be an advantage for outreach. But it is not FAIR. What can be practiced is to provide a link to the active project in the manuscript, and then still upload materials to a FAIR platform for reproducibility.
-5. **4TU.ResearchData** (FAIR, [4TU.ResearchData](https://data.4tu.nl)): Local storage for the technical universities of the Netherlands. They do quite a good job of making the management of datasets easy. Likely, there is a similar portal in your institution/country.
+2. **[OSF](https://osf.io)** (FAIR): Allows to make repos anonymous for review, which can be handy for the submission process. It is a ‘swiss knife’ for publishing artifacts in open access, and the platform allows a great level of flexibility. File versioning is straightforward, and OSF also allows you to pre-register your study. It is also easy to make your material anonymous for the review process.
+3. **[Zenodo](https://zenodo.org)** (FAIR): Data is stored at CERN, which is reliable. It is becoming a common place to share data, which may make it user-friendly. They accept up to 50GB per dataset with an option to have multiple datasets.
+4. **[GitHub](https://github.com)** (**not** FAIR) Everyone knows how to navigate around a repo on GitHub, which can be an advantage for outreach. But it is not FAIR. What can be practiced is to provide a link to the active project in the manuscript, and then still upload materials to a FAIR platform for reproducibility.
+5. **[4TU.ResearchData](https://data.4tu.nl)** (FAIR): Local storage for the technical universities of the Netherlands. They do quite a good job of making the management of datasets easy. Likely, there is a similar portal in your institution/country.
 
 
 
@@ -50,18 +62,17 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 We **encourage authors of papers with openly available materials to create a Pull request** to add their work. 
 Add your work here: [Related Works CSV](https://raw.githubusercontent.com/AutoUI-Open-Data-Initiative/autoui-open-data-initiative.github.io/master/_data/related_works.csv).
 Category must be one of [Dataset, Software, Model, Survey].
+We will check the entry and approve it in a timely manner. 
 
 
 ### Datasets
 
 | Category    | Title              | Author   | Year | Link |
-| ----------- | ------------------ | -------- | ---- | ---- |
-{% raw %}
 {% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
 {% for item in dataset %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
-{% endraw %}
+
 
 
 
