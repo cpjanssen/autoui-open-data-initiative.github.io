@@ -25,7 +25,7 @@ Following the guidelines we shared for the [AutomotiveUI '24 conference](https:/
 
 There are many places where we can publish open access artifacts. It is good practice to keep your data on a FAIR platform/repository. Here are some examples (updated June 2024):
 
-1. **ACM Digital Library** (FAIR, [ACM DL](https://dl.acm.org)): AutoUI is an ACM conference, and the platform allows the sharing of (small) supplementary material with the publication.
+1. **[ACM Digital Library](https://dl.acm.org)** (FAIR): AutoUI is an ACM conference, and the platform allows the sharing of (small) supplementary material with the publication.
 2. **OSF** (FAIR, [OSF](https://osf.io)): Allows to make repos anonymous for review, which can be handy for the submission process. It is a ‘swiss knife’ for publishing artifacts in open access, and the platform allows a great level of flexibility. File versioning is straightforward, and OSF also allows you to pre-register your study. It is also easy to make your material anonymous for the review process.
 3. **Zenodo** (FAIR, [Zenodo](https://zenodo.org)): Data is stored at CERN, which is reliable. It is becoming a common place to share data, which may make it user-friendly. They accept up to 50GB per dataset with an option to have multiple datasets.
 4. **GitHub** (**not** FAIR, [GitHub](https://github.com)) Everyone knows how to navigate around a repo on GitHub, which can be an advantage for outreach. But it is not FAIR. What can be practiced is to provide a link to the active project in the manuscript, and then still upload materials to a FAIR platform for reproducibility.
@@ -35,7 +35,7 @@ There are many places where we can publish open access artifacts. It is good pra
 
 ### Open Access Publications
 
-- **Choose Open Journals:** When publishing your findings, opt for journals that offer open access, making your research available to all. Avoid [https://beallslist.net/](Predatory Journals).
+- **Choose Open Journals:** When publishing your findings, opt for journals that offer open access, making your research available to all. Avoid [Predatory Journals](https://beallslist.net/).
 - **Preprints:** Consider posting preprints of your research to platforms like [arXiv](https://arxiv.org/) or [bioRxiv](https://www.biorxiv.org/) to share your findings ahead of journal publication.
 
 ### Transparency in Methodology
@@ -56,10 +56,12 @@ Category must be one of [Dataset, Software, Model, Survey].
 
 | Category    | Title              | Author   | Year | Link |
 | ----------- | ------------------ | -------- | ---- | ---- |
+{% raw %}
 {% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
 {% for item in dataset %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
+{% endraw %}
 
 
 
