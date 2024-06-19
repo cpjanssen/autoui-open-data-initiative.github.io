@@ -23,30 +23,45 @@ Following the guidelines we shared for the [AutomotiveUI '24 conference](https:/
 
 ### Data Sharing and Management
 
-- **Use Repositories:** Leverage platforms like Zenodo or the Open Science Framework (OSF) to share your datasets, ensuring they are accessible and citable.
-- **Adopt FAIR Principles:** Ensure your data is Findable, Accessible, Interoperable, and Reusable to maximize its value to the community.
+There are many places where we can publish open access artifacts. It is good practice to keep your data on a FAIR platform/repository. Here are some examples (updated June 2024):
+
+1. **ACM Digital Library** (FAIR, [ACM DL](https://dl.acm.org)): AutoUI is an ACM conference, and the platform allows the sharing of (small) supplementary material with the publication.
+2. **OSF** (FAIR, [OSF](https://osf.io)): Allows to make repos anonymous for review, which can be handy for the submission process. It is a ‘swiss knife’ for publishing artifacts in open access, and the platform allows a great level of flexibility. File versioning is straightforward, and OSF also allows you to pre-register your study. It is also easy to make your material anonymous for the review process.
+3. **Zenodo** (FAIR, [Zenodo](https://zenodo.org)): Data is stored at CERN, which is reliable. It is becoming a common place to share data, which may make it user-friendly. They accept up to 50GB per dataset with an option to have multiple datasets.
+4. **GitHub** (**not** FAIR, [GitHub](https://github.com)) Everyone knows how to navigate around a repo on GitHub, which can be an advantage for outreach. But it is not FAIR. What can be practiced is to provide a link to the active project in the manuscript, and then still upload materials to a FAIR platform for reproducibility.
+5. **4TU.ResearchData** (FAIR, [4TU.ResearchData](https://data.4tu.nl)): Local storage for the technical universities of the Netherlands. They do quite a good job of making the management of datasets easy. Likely, there is a similar portal in your institution/country.
+
+
 
 ### Open Access Publications
 
-- **Choose Open Journals:** When publishing your findings, opt for journals that offer open access, making your research available to all.
-- **Preprints:** Consider posting preprints of your research to platforms like arXiv or bioRxiv to share your findings ahead of journal publication.
+- **Choose Open Journals:** When publishing your findings, opt for journals that offer open access, making your research available to all. Avoid [https://beallslist.net/](Predatory Journals).
+- **Preprints:** Consider posting preprints of your research to platforms like [arXiv](https://arxiv.org/) or [bioRxiv](https://www.biorxiv.org/) to share your findings ahead of journal publication.
 
 ### Transparency in Methodology
 
-- **Code Sharing:** Use platforms like GitHub to share the code used in your research, including analysis scripts and software developed as part of your work.
+- **Code Sharing:** Use FAIR platforms/repositories (see above) to share the code used in your research, including analysis scripts and software developed as part of your work.
 - **Detailed Documentation:** Ensure that your methodologies are thoroughly documented and shared, allowing others to replicate or build upon your work.
 
 ## Related Works and Resources
 
 Here, we provide a dynamically updated table of related works, categorized by criteria such as datasets, simulation software, models, and surveys, to facilitate easy access to a wealth of resources that can support your Open Science endeavors.
 
+We **encourage authors of papers with openly available materials to create a Pull request** to add their work. 
+Add your work here: [Related Works CSV](https://raw.githubusercontent.com/AutoUI-Open-Data-Initiative/autoui-open-data-initiative.github.io/master/_data/related_works.csv).
+Category must be one of [Dataset, Software, Model, Survey].
+
+
 ### Datasets
 
 | Category    | Title              | Author   | Year | Link |
+| ----------- | ------------------ | -------- | ---- | ---- |
 {% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
 {% for item in dataset %}
 | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
 {% endfor %}
+
+
 
 ### Software
 
@@ -84,14 +99,45 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 
 
 
-We encourage authors of papers with openly available materials to create a Pull request so that their work can be added.
-Category must be one of [Dataset, Software, Model, Survey].
+
+
+
+## Paper and Workshop
+
+If you found this information useful and require a blueprint for , consider looking at, and citing:
+
+```
+@inproceedings{ebel2024changing,
+  title={Changing Lanes Toward Open Science: Openness and Transparency in Automotive User Research},
+  author={Ebel, Patrick and Bazilinskyy, Pavlo and Colley, Mark and Goodridge, Courtney and Hock, Philipp and Janssen, Christian P. and Sandhaus, Hauke and Srinivasan, Aravinda Ramakrishnan and Wintersberger, Philipp},
+  booktitle={16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutomotiveUI '24)},
+  pages={17},
+  year={2024},
+  address={Stanford, California, USA},
+  month={sep},
+  publisher={ACM},
+  location={New York, NY, USA},
+  note={Conditionally accepted}
+}
+```
+
+Also see the workshop [https://autouimodelingws.jimdosite.com/](website) for more information.
+
+
+
 
 ## Conclusion
 
 Embracing Open Science is a journey that requires commitment, collaboration, and a willingness to share and learn from one another. We invite the automotive user research community to join us in this endeavor, working together to advance our field in a way that is open, inclusive, and transparent.
 
-For more information, updates, and resources, keep an eye on this page and our upcoming publications and workshops dedicated to Open Science in automotive user research.
 
-[Link to Paper and Workshop: To be updated once available to maintain anonymity during the review process.]
+
+
+
+
+
+
+
+
+
 
