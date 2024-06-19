@@ -29,6 +29,26 @@ The pursuit of Open Science is essential for several reasons:
 
 In light of these benefits, we have taken steps to integrate Open Science principles into our research practices, aiming to lead by example within the automotive user research community.
 
+
+## Towards Open Science
+
+**Every step** toward greater transparency in research is valuable, contributing incrementally to the overall integrity and reproducibility of scientific work. It's important to recognize and celebrate each step taken, even if complete openness is not immediately achieved. Here are three levels of engagement with open science practices:
+
+- **Minimal Guidelines**:
+  - **Document methods and results**: Even if data cannot be shared, detailed documentation of research methods and results can be invaluable.
+  - **Acknowledge limitations**: Clearly state any restrictions on data sharing and transparency, explaining the reasons behind them.
+
+- **Appropriate Open Science**:
+  - **Share data when possible**: When permissible, share data in a trusted repository, ensuring it is de-identified and secure.
+  - **Use open-access platforms**: Publish findings in open-access journals or platforms to make the research accessible to a broader audience.
+
+- **Perfect Open Science**:
+  - **Full data and code availability**: Share all research data, code, and materials necessary to replicate the study.
+  - **Engage in pre-registration**: Register study protocols in advance to enhance the credibility of the research.
+
+
+
+
 ## Practical Tips for Embracing Open Science
 
 Following the guidelines we shared for the [AutomotiveUI '24 conference](https://www.auto-ui.org/24/authors/open-science/), here are practical tips to incorporate Open Science into your research workflow:
@@ -134,7 +154,7 @@ If you found this information useful and require a blueprint for , consider look
 }
 ```
 
-Also see the workshop [https://autouimodelingws.jimdosite.com/](website) for more information.
+Also see the workshop [website](https://autouimodelingws.jimdosite.com/) for more information.
 
 
 
