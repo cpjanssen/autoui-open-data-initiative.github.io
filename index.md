@@ -91,7 +91,7 @@ We will check the entry and approve it in a timely manner.
 <!-- Table Structure -->
 {% assign categories = site.data.related_works | group_by: "Category" %}
 {% for category in categories %}
-  <h2>{{ category.name }}</h2>
+  <h3>{{ category.name }}</h3>
   <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
