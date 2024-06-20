@@ -95,9 +95,9 @@ We will check the entry and approve it in a timely manner.
   <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
-        <th style="width: 35%">Title</th>
+        <th style="width: 40%">Title</th>
         <th style="width: 20%">Author</th>
-        <th style="width: 15%">Year</th>
+        <th style="width: 10%">Year</th>
         <th style="width: 30%">Link</th>
       </tr>
     </thead>
@@ -150,18 +150,6 @@ If you found this information useful, consider looking at and citing:
 ```
 
 Also see the 2023 workshop [website](https://autouimodelingws.jimdosite.com/) for more information.
-
-
-
-
-## Conclusion
-
-Embracing Open Science is a journey that requires commitment, collaboration, and a willingness to share and learn from one another. We invite the automotive user research community to join us in this endeavor, working together to advance our field in a way that is open, inclusive, and transparent.
-
-
-
-
-
 
 
 
