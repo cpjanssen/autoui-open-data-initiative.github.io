@@ -88,11 +88,6 @@ We will check the entry and approve it in a timely manner.
 <!-- Include DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 
-<!-- Debugging: Print the whole data to check if it's being read correctly -->
-{% for item in site.data.related_works %}
-  {{ item }}
-{% endfor %}
-
 <!-- Table Structure -->
 {% assign categories = site.data.related_works | group_by: "Category" %}
 {% for category in categories %}
@@ -133,76 +128,6 @@ We will check the entry and approve it in a timely manner.
     {% endfor %}
   });
 </script>
-
-
-
-
-### Datasets
-
-| Category    | Title              | Author   | Year | Link |
-{% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
-{% for item in dataset %}
-| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
-{% endfor %}
-
-
-
-<table border="1">
-  <thead>
-    <tr>
-      {% for header in site.data.related_works[0] %}
-        <th>{{ header[0] }}</th>
-      {% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in site.data.related_works %}
-      <tr>
-        {% for cell in row %}
-          <td>{{ cell }}</td>
-        {% endfor %}
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-
-### Software
-
-
-| Category    | Title              | Author   | Year | Link |
-{% assign simulationsoftware = site.data.related_works | where: "Category", "Software" | sort: 'Year' %}
-{% for item in simulationsoftware %}
-| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
-{% endfor %}
-
-### Models
-
-| Category    | Title              | Author   | Year | Link |
-{% assign models = site.data.related_works | where: "Category", "Model" | sort: 'Year' %}
-{% for item in models %}
-| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
-{% endfor %}
-
-### Surveys
-
-| Category    | Title              | Author   | Year | Link |
-{% assign surveys = site.data.related_works | where: "Category", "Survey" | sort: 'Year' %}
-{% for item in surveys %}
-| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
-{% endfor %}
-
-### Other
-
-| Category    | Title              | Author   | Year | Link |
-{% assign excluded_categories = "Survey,Model,Software,Dataset" | split: "," %}
-{% for item in site.data.related_works %}
-  {% unless excluded_categories contains item.Category %}
-    | {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
-  {% endunless %}
-{% endfor %}
-
-
 
 
 
