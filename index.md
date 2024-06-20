@@ -92,12 +92,11 @@ We will check the entry and approve it in a timely manner.
 {% endfor %}
 
 
-<h1>Dynamic Table from CSV</h1>
 
 <table border="1">
   <thead>
     <tr>
-      {% for header in site._data.related_works[0] %}
+      {% for header in site.data.related_works[0] %}
         <th>{{ header[0] }}</th>
       {% endfor %}
     </tr>
