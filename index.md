@@ -102,7 +102,7 @@ We will check the entry and approve it in a timely manner.
     </tr>
   </thead>
   <tbody>
-    {% for row in site.data.data %}
+    {% for row in site.data.related_works %}
       <tr>
         {% for cell in row %}
           <td>{{ cell }}</td>
