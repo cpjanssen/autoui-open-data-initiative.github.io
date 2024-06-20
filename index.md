@@ -115,6 +115,45 @@ We will check the entry and approve it in a timely manner.
 
 ### Software
 
+
+<!-- Include DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+<!-- Table Structure -->
+<table id="relatedWorksTable" class="display">
+  <thead>
+    <tr>
+      {% for header in site.data.related_works[0] %}
+        <th>{{ header }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in site.data.related_works %}
+      {% unless forloop.first %}
+        <tr>
+          {% for cell in row %}
+            <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+      {% endunless %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- Include jQuery and DataTables JS -->
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+<!-- Initialize DataTables -->
+<script>
+  $(document).ready(function() {
+    $('#relatedWorksTable').DataTable();
+  });
+</script>
+
+
+
 | Category    | Title              | Author   | Year | Link |
 {% assign simulationsoftware = site.data.related_works | where: "Category", "Software" | sort: 'Year' %}
 {% for item in simulationsoftware %}
