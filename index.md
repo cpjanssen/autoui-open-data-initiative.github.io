@@ -17,7 +17,7 @@ th, td {
 
 # Open Science in Automotive User Research
 
-Open Science principles are critical in advancing transparency, collaboration, and accessibility in research. By embracing these values, we aim to create a more inclusive and dynamic research environment, particularly within the automotive user research community. This initiative reflects our commitment to driving forward the development of open, user-centered automotive technologies and services, ensuring that knowledge and findings are shared openly to benefit the broader community.
+Openness and transparency are critical not only for judging the quality of empirical research, but also for accelerating scientific progress and promoting an inclusive scientific community. This initiative reflects our commitment to driving forward the development of open, user-centered automotive technologies and services, ensuring that knowledge and findings are shared openly to benefit the broader community. Therefore, we provide **practical guidelines** for authors on how to make their research open and transparent, and **provide a platform** for authors to promote the research artifacts they make available to the broader automotive user research community.
 
 ## Why Open Science?
 
@@ -28,7 +28,7 @@ The pursuit of Open Science is essential for several reasons:
 - **Promoting Transparency and Reproducibility:** Open access to research findings and data supports the verification of results, enhancing the credibility and reliability of research within our community.
 
 
-## Towards Open Science
+## Toward Open Science
 
 **Every step** toward greater transparency in research is valuable, contributing incrementally to the overall integrity and reproducibility of scientific work. It's important to recognize and celebrate each step taken, even if complete openness is not immediately achieved. Here are three levels of engagement with open science practices:
 
