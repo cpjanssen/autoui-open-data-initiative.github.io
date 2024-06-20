@@ -83,37 +83,6 @@ Category must be one of [Dataset, Software, Model, Survey].
 We will check the entry and approve it in a timely manner. 
 
 
-### Datasets
-
-| Category    | Title              | Author   | Year | Link |
-{% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
-{% for item in dataset %}
-| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
-{% endfor %}
-
-
-
-<table border="1">
-  <thead>
-    <tr>
-      {% for header in site.data.related_works[0] %}
-        <th>{{ header[0] }}</th>
-      {% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in site.data.related_works %}
-      <tr>
-        {% for cell in row %}
-          <td>{{ cell }}</td>
-        {% endfor %}
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-
-### Software
 
 
 <!-- Include DataTables CSS -->
@@ -123,7 +92,7 @@ We will check the entry and approve it in a timely manner.
 {% assign categories = site.data.related_works | group_by: "Category" %}
 {% for category in categories %}
   <h2>{{ category.name }}</h2>
-  <table id="{{ category.name | slugify }}" class="display">
+  <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
         {% for header in category.items[0] %}
@@ -157,11 +126,46 @@ We will check the entry and approve it in a timely manner.
 <script>
   $(document).ready(function() {
     {% for category in categories %}
-      $('#{{ category.name | slugify }}').DataTable();
+      $('#table-{{ category.name | slugify }}').DataTable();
     {% endfor %}
   });
 </script>
 
+
+
+
+
+### Datasets
+
+| Category    | Title              | Author   | Year | Link |
+{% assign dataset = site.data.related_works | where: "Category", "Dataset" | sort: 'Year' %}
+{% for item in dataset %}
+| {{ item.Category }} | {{ item.Title }} | {{ item.Author }} | {{ item.Year }} | [Link]({{ item.Link }}) |
+{% endfor %}
+
+
+
+<table border="1">
+  <thead>
+    <tr>
+      {% for header in site.data.related_works[0] %}
+        <th>{{ header[0] }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in site.data.related_works %}
+      <tr>
+        {% for cell in row %}
+          <td>{{ cell }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+### Software
 
 
 | Category    | Title              | Author   | Year | Link |
