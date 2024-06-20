@@ -92,6 +92,26 @@ We will check the entry and approve it in a timely manner.
 {% endfor %}
 
 
+<h1>Dynamic Table from CSV</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      {% for header in site._data.related_works[0] %}
+        <th>{{ header[0] }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in site.data.data %}
+      <tr>
+        {% for cell in row %}
+          <td>{{ cell }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 
 ### Software
