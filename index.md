@@ -88,6 +88,11 @@ We will check the entry and approve it in a timely manner.
 <!-- Include DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 
+<!-- Debugging: Print the whole data to check if it's being read correctly -->
+{% for item in site.data.related_works %}
+  {{ item }}
+{% endfor %}
+
 <!-- Table Structure -->
 {% assign categories = site.data.related_works | group_by: "Category" %}
 {% for category in categories %}
