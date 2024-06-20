@@ -95,22 +95,21 @@ We will check the entry and approve it in a timely manner.
   <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
-        {% for header in category.items[0] %}
-          <th>{{ header[0] }}</th>
-        {% endfor %}
+        <th>Category</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Year</th>
+        <th>Link</th>
       </tr>
     </thead>
     <tbody>
       {% for row in category.items %}
         {% unless forloop.first %}
           <tr>
-            {% for cell in row %}
-              {% if forloop.index == 5 %}
-                <td><a href="{{ cell }}">{{ cell }}</a></td>
-              {% else %}
-                <td>{{ cell }}</td>
-              {% endif %}
-            {% endfor %}
+            <td>{{ row.Title }}</td>
+            <td>{{ row.Author }}</td>
+            <td>{{ row.Year }}</td>
+            <td><a href="{{ row.Link }}">{{ row.Link }}</a></td>
           </tr>
         {% endunless %}
       {% endfor %}
