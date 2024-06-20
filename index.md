@@ -34,15 +34,15 @@ In light of these benefits, we have taken steps to integrate Open Science princi
 
 **Every step** toward greater transparency in research is valuable, contributing incrementally to the overall integrity and reproducibility of scientific work. It's important to recognize and celebrate each step taken, even if complete openness is not immediately achieved. Here are three levels of engagement with open science practices:
 
-- **Minimal Guidelines**:
+- **Level 1**:
   - **Document methods and results**: Even if data cannot be shared, detailed documentation of research methods and results can be invaluable.
   - **Acknowledge limitations**: Clearly state any restrictions on data sharing and transparency, explaining the reasons behind them.
 
-- **Appropriate Open Science**:
+- **Level 2**:
   - **Share data when possible**: When permissible, share data in a trusted repository, ensuring it is de-identified and secure.
   - **Use open-access platforms**: Publish findings in open-access journals or platforms to make the research accessible to a broader audience.
 
-- **Perfect Open Science**:
+- **Level 3**:
   - **Full data and code availability**: Share all research data, code, and materials necessary to replicate the study.
   - **Engage in pre-registration**: Register study protocols in advance to enhance the credibility of the research.
 
