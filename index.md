@@ -120,26 +120,34 @@ We will check the entry and approve it in a timely manner.
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 
 <!-- Table Structure -->
-<table id="relatedWorksTable" class="display">
-  <thead>
-    <tr>
-      {% for header in site.data.related_works[0] %}
-        <th>{{ header }}</th>
+{% assign categories = site.data.related_works | group_by: "Category" %}
+{% for category in categories %}
+  <h2>{{ category.name }}</h2>
+  <table id="{{ category.name | slugify }}" class="display">
+    <thead>
+      <tr>
+        {% for header in category.items[0] %}
+          <th>{{ header[0] }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in category.items %}
+        {% unless forloop.first %}
+          <tr>
+            {% for cell in row %}
+              {% if forloop.index == 5 %}
+                <td><a href="{{ cell }}">{{ cell }}</a></td>
+              {% else %}
+                <td>{{ cell }}</td>
+              {% endif %}
+            {% endfor %}
+          </tr>
+        {% endunless %}
       {% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in site.data.related_works %}
-      {% unless forloop.first %}
-        <tr>
-          {% for cell in row %}
-            <td>{{ cell }}</td>
-          {% endfor %}
-        </tr>
-      {% endunless %}
-    {% endfor %}
-  </tbody>
-</table>
+    </tbody>
+  </table>
+{% endfor %}
 
 <!-- Include jQuery and DataTables JS -->
 <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -148,7 +156,9 @@ We will check the entry and approve it in a timely manner.
 <!-- Initialize DataTables -->
 <script>
   $(document).ready(function() {
-    $('#relatedWorksTable').DataTable();
+    {% for category in categories %}
+      $('#{{ category.name | slugify }}').DataTable();
+    {% endfor %}
   });
 </script>
 
