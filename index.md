@@ -96,10 +96,11 @@ We will check the entry and approve it in a timely manner.
 <!-- Table Structure -->
 {% assign categories = site.data.related_works | group_by: "Category" %}
 {% for category in categories %}
-  <h3>{{ category.name }}</h3>
+  <h2>{{ category.name }}</h2>
   <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
+        <th>Category</th>
         <th>Title</th>
         <th>Author</th>
         <th>Year</th>
@@ -108,14 +109,13 @@ We will check the entry and approve it in a timely manner.
     </thead>
     <tbody>
       {% for row in category.items %}
-        {% unless forloop.first %}
-          <tr>
-            <td>{{ row.Title }}</td>
-            <td>{{ row.Author }}</td>
-            <td>{{ row.Year }}</td>
-            <td><a href="{{ row.Link }}">{{ row.Link }}</a></td>
-          </tr>
-        {% endunless %}
+        <tr>
+          <td>{{ row.Category }}</td>
+          <td>{{ row.Title }}</td>
+          <td>{{ row.Author }}</td>
+          <td>{{ row.Year }}</td>
+          <td><a href="{{ row.Link }}">{{ row.Link }}</a></td>
+        </tr>
       {% endfor %}
     </tbody>
   </table>
@@ -133,7 +133,6 @@ We will check the entry and approve it in a timely manner.
     {% endfor %}
   });
 </script>
-
 
 
 
