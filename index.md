@@ -95,7 +95,6 @@ We will check the entry and approve it in a timely manner.
   <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
-        <th>Category</th>
         <th>Title</th>
         <th>Author</th>
         <th>Year</th>
