@@ -27,8 +27,6 @@ The pursuit of Open Science is essential for several reasons:
 - **Enhancing Collaboration:** By making research data and methodologies openly available, we foster an environment where researchers can easily collaborate, building upon each other's work to push the boundaries of knowledge.
 - **Promoting Transparency and Reproducibility:** Open access to research findings and data supports the verification of results, enhancing the credibility and reliability of research within our community.
 
-In light of these benefits, we have taken steps to integrate Open Science principles into our research practices, aiming to lead by example within the automotive user research community.
-
 
 ## Towards Open Science
 
@@ -137,7 +135,7 @@ We will check the entry and approve it in a timely manner.
 
 ## Paper and Workshop
 
-If you found this information useful and require a blueprint for , consider looking at, and citing:
+If you found this information useful, consider looking at and citing:
 
 ```
 @inproceedings{ebel2024changing,
@@ -154,7 +152,7 @@ If you found this information useful and require a blueprint for , consider look
 }
 ```
 
-Also see the workshop [website](https://autouimodelingws.jimdosite.com/) for more information.
+Also see the 2023 workshop [website](https://autouimodelingws.jimdosite.com/) for more information.
 
 
 
