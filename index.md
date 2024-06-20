@@ -95,10 +95,10 @@ We will check the entry and approve it in a timely manner.
   <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Year</th>
-        <th>Link</th>
+        <th style="width: 35%">Title</th>
+        <th style="width: 20%">Author</th>
+        <th style="width: 15%">Year</th>
+        <th style="width: 30%">Link</th>
       </tr>
     </thead>
     <tbody>
