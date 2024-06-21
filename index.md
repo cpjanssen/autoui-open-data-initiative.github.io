@@ -17,7 +17,7 @@ th, td {
 
 # Open Science in Automotive User Research
 
-Openness and transparency are critical not only for judging the quality of empirical research, but also for accelerating scientific progress and promoting an inclusive scientific community. This initiative reflects our commitment to driving forward the development of open, user-centered automotive technologies and services, ensuring that knowledge and findings are shared openly to benefit the broader community. Therefore, we provide **practical guidelines** for authors on how to make their research open and transparent, and **provide a platform** for authors to promote the research artifacts they make available to the broader automotive user research community.
+Openness and transparency are critical not only for judging the quality of empirical research, but also for accelerating scientific progress and promoting an inclusive scientific community. This initiative reflects our commitment to driving forward the development of open, user-centered automotive technologies and services, ensuring that knowledge and findings are shared openly to benefit the broader community. Therefore, we provide **practical guidelines** for authors on how to make their research open and transparent, and provide **a platform** for authors to promote the research artifacts they have made available to the broader automotive user research community.
 
 ## Why Open Science?
 
@@ -33,27 +33,27 @@ The pursuit of Open Science is essential for several reasons:
 **Every step** toward greater transparency in research is valuable, contributing incrementally to the overall integrity and reproducibility of scientific work. It's important to recognize and celebrate each step taken, even if complete openness is not immediately achieved. Here are three levels of engagement with open science practices:
 
 - **Level 1**:
-  - **Document methods and results**: Even if data cannot be shared, detailed documentation of research methods and results can be invaluable.
+  - **Document methods and results**: Even if data cannot be shared, detailed documentation of research methods and results can be invaluable. If you can't share the raw data, maybe you can share aggregated data or the statistics of the data.
   - **Acknowledge limitations**: Clearly state any restrictions on data sharing and transparency, explaining the reasons behind them.
 
 - **Level 2**:
   - **Share data when possible**: When permissible, share data in a trusted repository, ensuring it is de-identified and secure.
-  - **Use open-access platforms**: Publish findings in open-access journals or platforms to make the research accessible to a broader audience.
+  - **Use open-access platforms**: Publish findings open-access and on [FAIR](https://www.go-fair.org/fair-principles/) platforms to make the research accessible to a broader audience.
 
 - **Level 3**:
-  - **Full data and code availability**: Share all research data, code, and materials necessary to replicate the study.
+  - **Full data and code availability**: Share all research data, code, and materials necessary to replicate the study and reproduce the results.
   - **Engage in pre-registration**: Register study protocols in advance to enhance the credibility of the research.
 
 
 
 
-## Practical Tips for Embracing Open Science
+## Practical Tips for Authors
 
 Following the guidelines we shared for the [AutomotiveUI '24 conference](https://www.auto-ui.org/24/authors/open-science/), here are practical tips to incorporate Open Science into your research workflow:
 
 ### Data Sharing and Management
 
-There are many places where we can publish open access artifacts. It is good practice to keep your data on a FAIR platform/repository. Here are some examples (updated June 2024):
+There are many places where we can publish open access artifacts. It is good practice to keep your data on a [FAIR](https://www.go-fair.org/fair-principles/)  platform/repository. Here are some examples (updated June 2024):
 
 1. **[ACM Digital Library](https://dl.acm.org)** (FAIR): AutoUI is an ACM conference, and the platform allows the sharing of (small) supplementary material with the publication.
 2. **[OSF](https://osf.io)** (FAIR): Allows to make repos anonymous for review, which can be handy for the submission process. It is a ‘swiss knife’ for publishing artifacts in open access, and the platform allows a great level of flexibility. File versioning is straightforward, and OSF also allows you to pre-register your study. It is also easy to make your material anonymous for the review process.
@@ -65,22 +65,22 @@ There are many places where we can publish open access artifacts. It is good pra
 
 ### Open Access Publications
 
-- **Choose Open Journals:** When publishing your findings, opt for journals that offer open access, making your research available to all. Avoid [Predatory Journals](https://beallslist.net/).
-- **Preprints:** Consider posting preprints of your research to platforms like [arXiv](https://arxiv.org/) or [bioRxiv](https://www.biorxiv.org/) to share your findings ahead of journal publication.
+- **Choose Open Publishers:** When publishing your findings, opt for conferences and journals that offer open access, making your research available to all. Avoid [Predatory Journals](https://beallslist.net/).
+- **Preprints:** Consider posting preprints of your research to platforms such as [arXiv](https://arxiv.org/), [bioRxiv](https://www.biorxiv.org/), or [OSF](https://www.osf.io/preprints). This is a good way of sharing your results either prior to publication or in case you cannot or do not want to pay the open access fees of publishers.
 
 ### Transparency in Methodology
 
-- **Code Sharing:** Use FAIR platforms/repositories (see above) to share the code used in your research, including analysis scripts and software developed as part of your work.
+- **Code Sharing:** Use [FAIR](https://www.go-fair.org/fair-principles/) platforms/repositories (see above) to share the code used in your research, including analysis scripts and software developed as part of your work.
 - **Detailed Documentation:** Ensure that your methodologies are thoroughly documented and shared, allowing others to replicate or build upon your work.
 
 ## Related Works and Resources
 
-Here, we provide a dynamically updated table of related works, categorized by criteria such as datasets, simulation software, models, and surveys, to facilitate easy access to a wealth of resources that can support your Open Science endeavors.
+Here, we provide a dynamically updated table of related works, categorized by the criteria datasets, simulation software and models to facilitate easy access to a wealth of resources that can support your research and inspire your Open Science endeavors.
 
-We **encourage authors of papers with openly available materials to create a Pull request** to add their work. 
+**We encourage authors of papers with openly available materials who want to link their work on this site to create a Pull request on [GitHub](https://github.com/AutoUI-Open-Data-Initiative/autoui-open-data-initiative.github.io) to add their work**. 
 Add your work here: [Related Works CSV](https://raw.githubusercontent.com/AutoUI-Open-Data-Initiative/autoui-open-data-initiative.github.io/master/_data/related_works.csv).
-Category must be one of [Dataset, Software, Model].
-We will check the entry and approve it in a timely manner. 
+The category must be one of [Dataset, Software, Model]. Please make sure your pull requests complies with the format.
+We will check the entry and approve it as soon as possible. 
 
 
 
@@ -159,7 +159,7 @@ We will check the entry and approve it in a timely manner.
 
 ## Paper and Workshop
 
-If you found this information useful, consider looking at and citing:
+More information on the current state-of-the art and motivators and barriers to open science in the automotive user research community is given in paper. If you find this information useful consider citing:
 
 ```
 @inproceedings{ebel2024changing,
