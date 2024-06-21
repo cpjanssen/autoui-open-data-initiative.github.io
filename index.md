@@ -124,8 +124,8 @@ We will check the entry and approve it in a timely manner.
           <td>{{ row.Title }}</td>
           <td>{{ row.Author }}</td>
           <td>{{ row.Year }}</td>
-          <td><a href="{{ row["Paper-Link"] }}">Paper-Link</a></td>
-          <td><a href="{{ row["Repo-Link"] }}">Repo-Link</a></td>
+          <td><a href="{{ row["Paper-Link"] }}">{{ row.Paper-Link }}</a></td>
+          <td><a href="{{ row["Repo-Link"] }}">{{ row.Repo-Link }}</a></td>
         </tr>
       {% endfor %}
     </tbody>
