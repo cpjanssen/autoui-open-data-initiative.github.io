@@ -2,4 +2,3 @@ Category,Title,Author,Year,Paper-Link,Repo-Link
 Dataset,Example Dataset 1,Author A,2023,https://dl.acm.org/,https://example.com/dataset1
 Software,PedSUMO: Simulacra of Automated Vehicle-Pedestrian Interaction Using SUMO To Study Large-Scale Effects,Mark Colley and Julian Czymmeck and Mustafa Kücükkocak and Pascal Jansen and Enrico Rukzio,2024,https://dl.acm.org/doi/10.1145/3610977.3637478,https://github.com/M-Colley/pedsumo
 Model,Example Model 1,Author C,2023,https://dl.acm.org/,https://example.com/model1
-
