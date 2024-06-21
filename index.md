@@ -95,9 +95,9 @@ We will check the entry and approve it in a timely manner.
   <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
-        <th style="width: 30%">Title</th>
+        <th style="width: 35%">Title</th>
         <th style="width: 20%">Author</th>
-        <th style="width: 10%">Year</th>
+        <th style="width: 5%">Year</th>
 		<th style="width: 20%">Paper-Link</th>
         <th style="width: 20%">Repo-Link</th>
       </tr>
@@ -108,8 +108,8 @@ We will check the entry and approve it in a timely manner.
           <td>{{ row.Title }}</td>
           <td>{{ row.Author }}</td>
           <td>{{ row.Year }}</td>
-          <td><a href="{{ row.Paper-Link }}">{{ row.Paper-Link }}</a></td>
-		  <td><a href="{{ row.Repo-Link }}">{{ row.Repo-Link }}</a></td>
+          <td><a href="{{ row.Paper-Link }}">Paper-Link</a></td>
+		  <td><a href="{{ row.Repo-Link }}">Repo-Link</a></td>
         </tr>
       {% endfor %}
     </tbody>
