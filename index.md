@@ -98,8 +98,8 @@ We will check the entry and approve it in a timely manner.
         <th style="width: 30%">Title</th>
         <th style="width: 20%">Author</th>
         <th style="width: 10%">Year</th>
-		<th style="width: 20%">Link</th>
-        <th style="width: 20%">Link</th>
+		<th style="width: 20%">Paper-Link</th>
+        <th style="width: 20%">Repo-Link</th>
       </tr>
     </thead>
     <tbody>
