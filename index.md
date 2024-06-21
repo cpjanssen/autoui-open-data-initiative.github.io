@@ -92,16 +92,11 @@ We will check the entry and approve it in a timely manner.
 <style>
   table.dataTable tbody td {
     white-space: nowrap; /* Ensure text does not wrap */
-    overflow: hidden; /* Hide the overflowed text */
-    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+    overflow-x: auto; /* Enable horizontal scrolling */
     max-width: 0; /* Set max-width to 0 to enable scrolling */
     cursor: pointer; /* Change cursor to indicate scrollable content */
   }
   
-  table.dataTable tbody td:hover {
-    overflow: auto; /* Allow scrolling within the cell */
-  }
-
   /* Optional: Styling to make the table look better */
   .dataTables_wrapper {
     width: 100%;
