@@ -85,20 +85,41 @@ We will check the entry and approve it in a timely manner.
 
 
 
+
 <!-- Include DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+<style>
+  table.dataTable tbody td {
+    white-space: nowrap; /* Ensure text does not wrap */
+    overflow: hidden; /* Hide the overflowed text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+    max-width: 0; /* Set max-width to 0 to enable scrolling */
+    cursor: pointer; /* Change cursor to indicate scrollable content */
+  }
+  
+  table.dataTable tbody td:hover {
+    overflow: auto; /* Allow scrolling within the cell */
+  }
+
+  /* Optional: Styling to make the table look better */
+  .dataTables_wrapper {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+</style>
 
 <!-- Table Structure -->
 {% assign categories = site.data.related_works | group_by: "Category" %}
 {% for category in categories %}
   <h3>{{ category.name }}</h3>
-  <table id="table-{{ category.name | slugify }}" class="display">
+  <table id="table-{{ category.name | slugify }}" class="display" style="width:100%">
     <thead>
       <tr>
         <th style="width: 35%">Title</th>
         <th style="width: 20%">Author</th>
         <th style="width: 5%">Year</th>
-		<th style="width: 20%">Paper-Link</th>
+        <th style="width: 20%">Paper-Link</th>
         <th style="width: 20%">Repo-Link</th>
       </tr>
     </thead>
@@ -108,8 +129,8 @@ We will check the entry and approve it in a timely manner.
           <td>{{ row.Title }}</td>
           <td>{{ row.Author }}</td>
           <td>{{ row.Year }}</td>
-          <td><a href="{{ row.Paper-Link }}">Paper-Link</a></td>
-		  <td><a href="{{ row.Repo-Link }}">Repo-Link</a></td>
+          <td><a href="{{ row["Paper-Link"] }}">Paper-Link</a></td>
+          <td><a href="{{ row["Repo-Link"] }}">Repo-Link</a></td>
         </tr>
       {% endfor %}
     </tbody>
@@ -124,7 +145,16 @@ We will check the entry and approve it in a timely manner.
 <script>
   $(document).ready(function() {
     {% for category in categories %}
-      $('#table-{{ category.name | slugify }}').DataTable();
+      $('#table-{{ category.name | slugify }}').DataTable({
+        "autoWidth": false,  // Disable automatic column width calculation
+        "columnDefs": [
+          { "width": "35%", "targets": 0 },
+          { "width": "20%", "targets": 1 },
+          { "width": "5%", "targets": 2 },
+          { "width": "20%", "targets": 3 },
+          { "width": "20%", "targets": 4 }
+        ]
+      });
     {% endfor %}
   });
 </script>
