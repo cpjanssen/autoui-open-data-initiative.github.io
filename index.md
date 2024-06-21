@@ -38,7 +38,7 @@ The pursuit of Open Science is essential for several reasons:
 
 - **Level 2**:
   - **Share data when possible**: When permissible, share data in a trusted repository, ensuring it is de-identified and secure.
-  - **Use open-access platforms**: Publish findings open-access and on [FAIR](https://www.go-fair.org/fair-principles/) platforms to make the research accessible to a broader audience.
+  - **Use open-access platforms**: Publish findings open-access and on [FAIR](https://www.go-fair.org/fair-principles/) (findable, accessible, interoperable, and reusable) platforms to make the research accessible to a broader audience.
 
 - **Level 3**:
   - **Full data and code availability**: Share all research data, code, and materials necessary to replicate the study and reproduce the results.
