@@ -79,7 +79,7 @@ Here, we provide a dynamically updated table of related works, categorized by cr
 
 We **encourage authors of papers with openly available materials to create a Pull request** to add their work. 
 Add your work here: [Related Works CSV](https://raw.githubusercontent.com/AutoUI-Open-Data-Initiative/autoui-open-data-initiative.github.io/master/_data/related_works.csv).
-Category must be one of [Dataset, Software, Model, Survey].
+Category must be one of [Dataset, Software, Model].
 We will check the entry and approve it in a timely manner. 
 
 
@@ -95,10 +95,11 @@ We will check the entry and approve it in a timely manner.
   <table id="table-{{ category.name | slugify }}" class="display">
     <thead>
       <tr>
-        <th style="width: 40%">Title</th>
+        <th style="width: 30%">Title</th>
         <th style="width: 20%">Author</th>
         <th style="width: 10%">Year</th>
-        <th style="width: 30%">Link</th>
+		<th style="width: 20%">Link</th>
+        <th style="width: 20%">Link</th>
       </tr>
     </thead>
     <tbody>
@@ -107,7 +108,8 @@ We will check the entry and approve it in a timely manner.
           <td>{{ row.Title }}</td>
           <td>{{ row.Author }}</td>
           <td>{{ row.Year }}</td>
-          <td><a href="{{ row.Link }}">{{ row.Link }}</a></td>
+          <td><a href="{{ row.Paper-Link }}">{{ row.Paper-Link }}</a></td>
+		  <td><a href="{{ row.Repo-Link }}">{{ row.Repo-Link }}</a></td>
         </tr>
       {% endfor %}
     </tbody>
