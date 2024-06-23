@@ -73,11 +73,11 @@ There are many places where we can publish open access artifacts. It is good pra
 - **Code Sharing:** Use [FAIR](https://www.go-fair.org/fair-principles/) platforms/repositories (see above) to share the code used in your research, including analysis scripts and software developed as part of your work.
 - **Detailed Documentation:** Ensure that your methodologies are thoroughly documented and shared, allowing others to replicate or build upon your work.
 
-## Related Works and Resources
+## Openly Available Research Artifacts
 
 Here, we provide a dynamically updated table of related works, categorized by the criteria datasets, simulation software and models to facilitate easy access to a wealth of resources that can support your research and inspire your Open Science endeavors.
 
-**We encourage authors of papers with openly available materials who want to link their work on this site to create a Pull request on [GitHub](https://github.com/AutoUI-Open-Data-Initiative/autoui-open-data-initiative.github.io) to add their work**. 
+**We encourage authors of papers with openly available materials who want to link their work on this site to create a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)  on [GitHub](https://github.com/AutoUI-Open-Data-Initiative/autoui-open-data-initiative.github.io) to add their work**. 
 Add your work here: [Related Works CSV](https://raw.githubusercontent.com/AutoUI-Open-Data-Initiative/autoui-open-data-initiative.github.io/master/_data/related_works.csv).
 The category must be one of [Dataset, Software, Model]. Please make sure your pull requests complies with the format.
 We will check the entry and approve it as soon as possible. 
@@ -159,8 +159,7 @@ We will check the entry and approve it as soon as possible.
 
 ## Paper and Workshop
 
-More information on the current state-of-the art and motivators and barriers to open science in the automotive user research community is given in paper. If you find this information useful consider citing:
-
+For more information on the current state of the art and the motivators and barriers to open science in the automotive user research community, see the paper below. If you find this information useful, please consider citing it:
 ```
 @inproceedings{ebel2024changing,
   title={Changing Lanes Toward Open Science: Openness and Transparency in Automotive User Research},
