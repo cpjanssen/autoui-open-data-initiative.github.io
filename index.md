@@ -159,7 +159,7 @@ We will check the entry and approve it as soon as possible.
 
 ## Paper and Workshop
 
-For more information on the current state of the art and the motivators and barriers to open science in the automotive user research community, see the paper below. If you find this information useful, please consider citing it:
+For more information on the current state of the art and the motivators and barriers to open science in the automotive user research community, see the [paper](https://osf.io/tmkc2) or its materials published on [OSF](https://osf.io/zdpek/). If you find this information useful, please consider citing it:
 ```
 @inproceedings{ebel2024changing,
   title={Changing Lanes Toward Open Science: Openness and Transparency in Automotive User Research},
