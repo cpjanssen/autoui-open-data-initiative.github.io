@@ -171,7 +171,9 @@ For more information on the current state of the art and the motivators and barr
   month={sep},
   publisher={ACM},
   location={New York, NY, USA},
-  note={Conditionally accepted}
+  url = {https://doi.org/10.1145/3640792.3675730},
+  doi = {10.1145/3640792.3675730},
+  series = {AutomotiveUI '24}
 }
 ```
 
